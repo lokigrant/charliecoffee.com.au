@@ -1,0 +1,33 @@
+---
+layout: default
+title: Charlie Coffee
+background: /img/2F6B82621.jpg
+meta:
+  keywords: Charlie Coffee
+  description: Charlie Coffee
+---
+
+<section id="page-content">
+  <div class="thb-container top"></div>
+  <div id="content_anchor" class="thb-container bottom">
+    <div id="content" class="inner-wrapper">
+      <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        jQuery(window).on("thb-loaded-videos", function() {
+          var video = jQuery(".thb-featured-video video, .thb-featured-video iframe");
+          video.each( function() {
+            var player = jQuery(this).data("player");
+            player.play();
+            jQuery(this).on("change", function( event, state ) {
+              if ( state === "finished" ) {
+                player.play();
+              }
+            });
+          } );
+        });
+      }, false);
+      </script>
+      <div class="post-10 page type-page status-publish hentry thb-text"></div>
+    </div><!-- /#content_anchor -->
+  </div><!-- /#content -->
+</section>

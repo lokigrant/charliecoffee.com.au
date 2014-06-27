@@ -1,0 +1,64 @@
+# Base Jekyll configuration
+
+# Note: Grunt handles some Jekyll configuration. If you set something here and
+# it doesn't work, check if it is set in the Gruntfile. There is also a
+# _config.build.yml to set custom overrides for `grunt build`.
+
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
+
+name: charliecoffee.com.au
+description: Charlie Coffee
+author:
+  name: Loki Grant
+  email: lachlan@charliecoffee.com.au
+
+# Exclude directories and/or files from the conversion.
+# Grunt handles images and assets.
+exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'node_modules']
+
+# Force inclusion of directories and/or files in the conversion.
+# dotfiles are excluded by default.
+include: []
+
+# publish posts with a future date?
+# _config.build.yml sets this to false on `grunt build`
+future: true
+
+# process and render draft posts?
+# _config.build.yml sets this to false on `grunt build`
+show_drafts: true
+
+# Markdown library
+markdown: kramdown
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   use_coderay: false
+#   coderay:
+#     coderay_wrap: div
+#     coderay_line_numbers: inline
+#     coderay_line_numbers_start: 1
+#     coderay_tab_width: 4
+#     coderay_bold_every: 10
+#     coderay_css: style
+
+# Use Pygments to highlight code blocks
+pygments: true
+
+url: http://charliecoffee.com.au
+
+# Default post path style
+# date  /:categories/:year/:month/:day/:title.html
+# pretty  /:categories/:year/:month/:day/:title/
+# none  /:categories/:title.html
+permalink: /:categories/:title/
+
+encoding: utf-8
+
+# yeoman takes care of these
+# source: 'app'
+# destination: 'dist'
