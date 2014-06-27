@@ -368,8 +368,8 @@ module.exports = function (grunt) {
   grunt.registerTask('check', [
     'clean:server',
     'jekyll:check',
-    'sass:server',
-    'jshint:all'
+    'sass:server'
+    //'jshint:all'      // disabled temporarily
     //'csslint:check'   // disabled temporarily
   ]);
 
