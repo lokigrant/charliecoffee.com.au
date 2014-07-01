@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
 	font-family: "rockford";
-	src: url("/fonts/rockford.eot");
-	src: url("/fonts/rockford.eot?#iefix") format("embedded-opentype"),
-	url("/fonts/rockford.ttf") format("truetype"),
-	url("/fonts/rockford.svg#rockford") format("svg"),
-	url("/fonts/rockford.woff") format("woff");
+	src: url("../fonts/rockford.eot");
+	src: url("../fonts/rockford.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/rockford.ttf") format("truetype"),
+	url("../fonts/rockford.svg#rockford") format("svg"),
+	url("../fonts/rockford.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
