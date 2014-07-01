@@ -62,19 +62,25 @@
 
       </div><!-- /#page-content-wrapper -->
 
-      <span class="thb-stretched-background-overlay"></span>
-      <div class="thb-stretched-background-container">
-        <img src="" data-src="{{ page.background }}" alt="">
-      </div>
-
-      <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-        jQuery(".thb-stretched-background-container")
-          .thb_stretcher({
-            adapt: false
-          });
-      }, false);
-      </script>
+      {% if page.video %}
+        <video autoplay loop>
+          <source src="{{ page.video.webm }}" type="video/webm">
+          <source src="{{ page.video.mp4 }}" type="video/mp4">
+        </video>
+      {% elsif page.background %}
+        <span class="thb-stretched-background-overlay"></span>
+        <div class="thb-stretched-background-container">
+          <img src="" data-src="{{ page.background }}" alt="">
+        </div>
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          jQuery(".thb-stretched-background-container")
+            .thb_stretcher({
+              adapt: false
+            });
+        }, false);
+        </script>
+      {% endif %}
 
       <footer id="footer">
         <div id="copyright">
